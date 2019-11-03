@@ -5,7 +5,7 @@ server = http.createServer(app),
 io = require('socket.io').listen(server);
 app.get('/',(req, res) => {
 
-res.send('Chat Server is Runing on port 007')
+res.send('Chat Server is Runing on port 3000')
 });
 io.on('connection', (socket) => {
 console.log('user connected')
