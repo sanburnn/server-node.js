@@ -17,7 +17,7 @@ socket.on('join', function(userNickname){
 socket.on('messagedetection',(senderNickname,messageContent) => {
     // log the message in console
 
-    console.log(sendernickname+" :" +messageContent)
+    console.log(senderNickname+" :" +messageContent)
     //create a message object
     let message = {"message":messageContent, "senderNickname":senderNickname}
     //send message to the client side
@@ -31,6 +31,14 @@ socket.on('disconnect', function() {
 });
 
 });
+
+server.listen(3000,()=>{
+
+    console.log('Node app is running on port 3000');
+    
+    });
+    
+
 
 //server
 //another example for shit
