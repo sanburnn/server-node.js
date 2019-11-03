@@ -7,6 +7,9 @@ app.get('/',(req, res) => {
 
 res.send('Chat Server is Runing on port 3000')
 });
+
+//main program Slurddd
+
 io.on('connection', (socket) => {
 console.log('user connected')
 socket.on('join', function(userNickname){
