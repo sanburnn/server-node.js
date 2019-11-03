@@ -7,17 +7,9 @@ app.get('/',(req, res) => {
 
 res.send('Chat Server is Runing on port 007')
 });
-//io.on('connection', (socket) => {
-    server.listen(007,()=>{
+io.on('connection', (socket) => {
 console.log('user connected')
-    });
-
-
-
-
-
-
-/*socket.on('join', function(userNickname){
+socket.on('join', function(userNickname){
     console.log(userNickname +" : has join the chat " );
     socket.broadcast.emit('userjoinedthechat',userNickname +" : has joined the chat");
 });
@@ -39,7 +31,7 @@ socket.on('disconnect', function() {
 });
 
 });
-*/
+
 //server
 //another example for shit
 
