@@ -40,11 +40,10 @@ server.listen(3000,()=>{
     console.log('Node app is running on port 3000');
     
     });
-    
-
-
 //server
-//another example for shit
+/*you can modify the server as you wishh
+this is just example
+*/
 
 
 
